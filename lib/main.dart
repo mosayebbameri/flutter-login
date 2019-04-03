@@ -2,15 +2,15 @@
 //@author mosayeb bameri
 import "package:flutter/material.dart";
 
-void main() => runApp(new MyApp() );
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "simple login",
-      home: new MainActivity(),
+      home: MainActivity(),
     );
   }
 }
@@ -30,9 +30,9 @@ class _MainActivityState extends State<MainActivity> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          child: new Stack(
+          child: Stack(
             children: <Widget>[
-              new Container(
+              Container(
                 width: double.infinity,
                 height: 200,
                   decoration: BoxDecoration(
@@ -45,14 +45,14 @@ class _MainActivityState extends State<MainActivity> {
                       end: Alignment.bottomRight
                     )
                   ),
-                  child: new Center(
-                    child: new Icon(Icons.lock_outline,size: 40,),
+                  child: Center(
+                    child: Icon(Icons.lock_outline,size: 40,),
                   ),
               ),
-              new ListView(
+              ListView(
                 children: <Widget>[
-                  new Container(
-                    margin: EdgeInsets.only(top: 100),
+                  Container(
+                    margin: const EdgeInsets.only(top: 100),
                     width: double.infinity,
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -64,7 +64,7 @@ class _MainActivityState extends State<MainActivity> {
 
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: new Column(
+                      child: Column(
 
                         children: <Widget>[
                           Container(height: 40,),
@@ -86,7 +86,7 @@ class _MainActivityState extends State<MainActivity> {
                             onTap: (){
                               print("ok");
                             },
-                            child: new Container(
+                            child: Container(
                               width: 300,
                               height: 50,
                               decoration: BoxDecoration(
@@ -94,19 +94,19 @@ class _MainActivityState extends State<MainActivity> {
                                   borderRadius: BorderRadius.all(Radius.circular(60))
                               ),
                               child: Center(
-                                  child: new Text("ورود",
+                                  child: Text("ورود",
                                     style: TextStyle(color: Colors.white,fontSize: 23,fontWeight: FontWeight.bold)
                                     ,)
                               ),
                             ),
                           ),
-                          new SizedBox(height: 10,),
-                          new Text("رمز عبورت رو فراموش کردی؟"),
-                          new SizedBox(height: 40,),
-                          new Row(
+                          SizedBox(height: 10,),
+                          Text("رمز عبورت رو فراموش کردی؟"),
+                          SizedBox(height: 40,),
+                          Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              new Container(
+                              Container(
                                 width: 60,
                                 height: 60,
                                 decoration: BoxDecoration(
@@ -115,15 +115,15 @@ class _MainActivityState extends State<MainActivity> {
                                       Radius.circular(60)
                                   ),
                                 ),
-                                child: new Center(
-                                  child: new Icon(
+                                child: Center(
+                                  child: Icon(
                                     Icons.fingerprint,
                                     color:Colors.grey[700] ,
                                   ),
                                 ),
                               ),
                               SizedBox(width: 50,),
-                              new Container(
+                              Container(
                                 width: 60,
                                 height: 60,
                                 decoration: BoxDecoration(
@@ -132,8 +132,8 @@ class _MainActivityState extends State<MainActivity> {
                                       Radius.circular(100)
                                   ),
                                 ),
-                                child: new Center(
-                                  child: new Icon(
+                                child: Center(
+                                  child: Icon(
                                     Icons.face,
                                     color:Colors.grey[700] ,
                                   ),
