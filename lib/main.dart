@@ -101,7 +101,7 @@ class _MainActivityState extends State<MainActivity> {
                             ),
                           ),
                           new SizedBox(height: 10,),
-                          new Text("رمز عبورت رو فرامش کردی؟"),
+                          new Text("رمز عبورت رو فراموش کردی؟"),
                           new SizedBox(height: 40,),
                           new Row(
                             mainAxisAlignment: MainAxisAlignment.center,
